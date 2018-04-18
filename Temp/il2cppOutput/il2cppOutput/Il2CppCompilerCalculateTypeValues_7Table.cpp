@@ -4512,8 +4512,10 @@ public:
 	intptr_t ____winid_1;
 	// System.Threading.CompressedStack System.Security.SecurityContext::_stack
 	CompressedStack_t1202932761 * ____stack_2;
+	// System.Boolean System.Security.SecurityContext::_suppressFlowWindowsIdentity
+	bool ____suppressFlowWindowsIdentity_3;
 	// System.Boolean System.Security.SecurityContext::_suppressFlow
-	bool ____suppressFlow_3;
+	bool ____suppressFlow_4;
 
 public:
 	inline static int32_t get_offset_of__capture_0() { return static_cast<int32_t>(offsetof(SecurityContext_t2435442044, ____capture_0)); }
@@ -4541,12 +4543,20 @@ public:
 		Il2CppCodeGenWriteBarrier((&____stack_2), value);
 	}
 
-	inline static int32_t get_offset_of__suppressFlow_3() { return static_cast<int32_t>(offsetof(SecurityContext_t2435442044, ____suppressFlow_3)); }
-	inline bool get__suppressFlow_3() const { return ____suppressFlow_3; }
-	inline bool* get_address_of__suppressFlow_3() { return &____suppressFlow_3; }
-	inline void set__suppressFlow_3(bool value)
+	inline static int32_t get_offset_of__suppressFlowWindowsIdentity_3() { return static_cast<int32_t>(offsetof(SecurityContext_t2435442044, ____suppressFlowWindowsIdentity_3)); }
+	inline bool get__suppressFlowWindowsIdentity_3() const { return ____suppressFlowWindowsIdentity_3; }
+	inline bool* get_address_of__suppressFlowWindowsIdentity_3() { return &____suppressFlowWindowsIdentity_3; }
+	inline void set__suppressFlowWindowsIdentity_3(bool value)
 	{
-		____suppressFlow_3 = value;
+		____suppressFlowWindowsIdentity_3 = value;
+	}
+
+	inline static int32_t get_offset_of__suppressFlow_4() { return static_cast<int32_t>(offsetof(SecurityContext_t2435442044, ____suppressFlow_4)); }
+	inline bool get__suppressFlow_4() const { return ____suppressFlow_4; }
+	inline bool* get_address_of__suppressFlow_4() { return &____suppressFlow_4; }
+	inline void set__suppressFlow_4(bool value)
+	{
+		____suppressFlow_4 = value;
 	}
 };
 
@@ -5929,12 +5939,13 @@ extern const int32_t g_FieldOffsetTable739[1] =
 	PermissionSet_t223948603::get_offset_of_U3CDeclarativeSecurityU3Ek__BackingField_0(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize740 = { sizeof (SecurityContext_t2435442044), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable740[4] = 
+extern const int32_t g_FieldOffsetTable740[5] = 
 {
 	SecurityContext_t2435442044::get_offset_of__capture_0(),
 	SecurityContext_t2435442044::get_offset_of__winid_1(),
 	SecurityContext_t2435442044::get_offset_of__stack_2(),
-	SecurityContext_t2435442044::get_offset_of__suppressFlow_3(),
+	SecurityContext_t2435442044::get_offset_of__suppressFlowWindowsIdentity_3(),
+	SecurityContext_t2435442044::get_offset_of__suppressFlow_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize741 = { sizeof (SecurityCriticalAttribute_t2279322844), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable741[1] = 

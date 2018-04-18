@@ -124,7 +124,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 1cb40c746a01332eb78618e045b0b5a9 Assembly-CSharp.dll:.Reporter
 9249a6291c984434be5bc9d5431855d8 Assembly-CSharp.dll:.ARReferenceImagesSet
-8a70edbd1c63bdd708c49bb4fcafb693 Assembly-CSharp.dll:.PaintManager
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroyOnLoad
@@ -193,7 +192,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 2ba36b6a81a4caef27f07fa7511b83ea Assembly-CSharp.dll:UnityEngine.XR.iOS.ARKitFaceTrackingRemoteConnection
 179196ad7a4b4ea54032fb24e507ecf3 Assembly-CSharp.dll:.ARReferenceImage
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARKitLightManager
-261208f09b91893c9d62e8623e5242ba Assembly-CSharp.dll:UnityEngine.XR.iOS.ResizeManager
+ee918a3d804339605206538136f18dd9 Assembly-CSharp.dll:UnityEngine.XR.iOS.ResizeManager
 eb4fd2b7e0cd698b07603d3e2b00ab7c Assembly-CSharp.dll:.ARKitPlaneMeshRender
 391d84b859f3b155fe38f54bfce79162 Assembly-CSharp.dll:.UnityPointCloudExample
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityARCameraNearFar
+ee918a3d804339605206538136f18dd9 Assembly-CSharp.dll:UnityEngine.XR.iOS.WallManager

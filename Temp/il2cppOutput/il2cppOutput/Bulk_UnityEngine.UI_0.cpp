@@ -1627,8 +1627,8 @@ struct Vector3U5BU5D_t1718750761;
 struct Vector2U5BU5D_t1457185986;
 
 
-#ifndef U3CMODULEU3E_T692745543_H
-#define U3CMODULEU3E_T692745543_H
+#ifndef U3CMODULEU3E_T692745544_H
+#define U3CMODULEU3E_T692745544_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1636,7 +1636,7 @@ struct Vector2U5BU5D_t1457185986;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745543 
+struct  U3CModuleU3E_t692745544 
 {
 public:
 
@@ -1646,7 +1646,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745543_H
+#endif // U3CMODULEU3E_T692745544_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -17266,9 +17266,9 @@ extern "C"  void Comparison_1__ctor_m3138326461_gshared (Comparison_1_t830933145
 // System.Void System.Array::Sort<UnityEngine.RaycastHit>(!!0[],System.Comparison`1<!!0>)
 extern "C"  void Array_Sort_TisRaycastHit_t1056001966_m1961542140_gshared (RuntimeObject * __this /* static, unused */, RaycastHitU5BU5D_t1690781147* p0, Comparison_1_t830933145 * p1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
-extern "C"  void Dictionary_2__ctor_m2601736566_gshared (Dictionary_2_t1968819495 * __this, const RuntimeMethod* method);
+extern "C"  void Dictionary_2__ctor_m252876485_gshared (Dictionary_2_t1968819495 * __this, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::TryGetValue(!0,!1&)
-extern "C"  bool Dictionary_2_TryGetValue_m3411363121_gshared (Dictionary_2_t1968819495 * __this, int32_t p0, RuntimeObject ** p1, const RuntimeMethod* method);
+extern "C"  bool Dictionary_2_TryGetValue_m3167860287_gshared (Dictionary_2_t1968819495 * __this, int32_t p0, RuntimeObject ** p1, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Add(!0,!1)
 extern "C"  void Dictionary_2_Add_m2059424751_gshared (Dictionary_2_t1968819495 * __this, int32_t p0, RuntimeObject * p1, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Remove(!0)
@@ -17849,13 +17849,13 @@ extern "C"  bool PointerEventData_get_useDragThreshold_m1334768384 (PointerEvent
 // System.String UnityEngine.EventSystems.RaycastResult::ToString()
 extern "C"  String_t* RaycastResult_ToString_m2678663776 (RaycastResult_t3360306849 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::.ctor()
-#define Dictionary_2__ctor_m2573177474(__this, method) ((  void (*) (Dictionary_2_t2696614423 *, const RuntimeMethod*))Dictionary_2__ctor_m2601736566_gshared)(__this, method)
+#define Dictionary_2__ctor_m2573177474(__this, method) ((  void (*) (Dictionary_2_t2696614423 *, const RuntimeMethod*))Dictionary_2__ctor_m252876485_gshared)(__this, method)
 // System.Void UnityEngine.EventSystems.PointerInputModule/MouseState::.ctor()
 extern "C"  void MouseState__ctor_m1467839005 (MouseState_t384203932 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.EventSystems.BaseInputModule::.ctor()
 extern "C"  void BaseInputModule__ctor_m545527485 (BaseInputModule_t2019268878 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::TryGetValue(!0,!1&)
-#define Dictionary_2_TryGetValue_m521466559(__this, p0, p1, method) ((  bool (*) (Dictionary_2_t2696614423 *, int32_t, PointerEventData_t3807901092 **, const RuntimeMethod*))Dictionary_2_TryGetValue_m3411363121_gshared)(__this, p0, p1, method)
+#define Dictionary_2_TryGetValue_m521466559(__this, p0, p1, method) ((  bool (*) (Dictionary_2_t2696614423 *, int32_t, PointerEventData_t3807901092 **, const RuntimeMethod*))Dictionary_2_TryGetValue_m3167860287_gshared)(__this, p0, p1, method)
 // System.Void UnityEngine.EventSystems.PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem)
 extern "C"  void PointerEventData__ctor_m2263609344 (PointerEventData_t3807901092 * __this, EventSystem_t1003666588 * ___eventSystem0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.EventSystems.PointerEventData>::Add(!0,!1)
