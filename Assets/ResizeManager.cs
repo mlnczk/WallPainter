@@ -8,6 +8,7 @@ namespace UnityEngine.XR.iOS{
 
 public class ResizeManager : MonoBehaviour {
 	
+
 		public GameObject firstWall;
 		public GameObject secondWall;
 		public GameObject thirdWall;
@@ -26,29 +27,25 @@ public class ResizeManager : MonoBehaviour {
 		private Vector3 bluePlanePosition;
 
 		private Vector3 tempHolder;
+		private GameObject tempGameObjectHolder;
 
 		private int actualActiveIteration = 0;
 		private int amountOfObjectsInList;
-		private float amountToChange = 0.4f;
+		private float amountToChange = 1f;
 
 		public void Start(){
 			CreateList ();
 		}
 
 		public void Update(){
-//			GetActiveAnchors ();
-//			if (planeAnchors.Count != 0) {
-//				bluePlaneSize = planeAnchors [0].planeAnchor.extent;
-//			}
+			
 		} 
 
-		private void GetActiveAnchors(){
-			foreach (ARPlaneAnchorGameObject arpag in anchorManager.GetCurrentPlaneAnchors()) {
-				planeAnchors.Add (arpag);
-			}
-			amountOfObjectsInList = planeAnchors.Count;
-			bluePlaneSize = planeAnchors [amountOfObjectsInList - 1].planeAnchor.extent;
-		}
+//		private void DisableStaticWalls(){
+//			foreach (GameObject gameObject in listOfWalls) {
+//				gameObject.isStatic = false;
+//			}
+//		}
 
 		private void CreateList(){
 			activeWall = firstWall;
@@ -61,8 +58,15 @@ public class ResizeManager : MonoBehaviour {
 		public void FitToHitBox(){
 			GetActiveAnchors ();
 			activeWall.transform.localScale = bluePlaneSize;
-			activeWall.transform.position = bluePlanePosition;
 			}
+
+		private void GetActiveAnchors(){
+			foreach (ARPlaneAnchorGameObject arpag in anchorManager.GetCurrentPlaneAnchors()) {
+				planeAnchors.Add (arpag);
+			}
+			amountOfObjectsInList = planeAnchors.Count;
+			bluePlaneSize = planeAnchors [amountOfObjectsInList - 1].planeAnchor.extent;
+		}
 
 		public void IncreaseHorizontal(){
 			tempHolder = activeWall.transform.localScale;
@@ -93,7 +97,6 @@ public class ResizeManager : MonoBehaviour {
 		}
 		public void AcceptButtonPressed(){
 			CheckActiveWall ();
-
 			SetupNextWall ();
 		}
 

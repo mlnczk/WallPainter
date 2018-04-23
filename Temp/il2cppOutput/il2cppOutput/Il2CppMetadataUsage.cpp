@@ -2392,6 +2392,7 @@ const RuntimeMethod* Dictionary_2_set_Item_m3421257586_RuntimeMethod_var;
 const RuntimeMethod* Dictionary_2_Clear_m1470804087_RuntimeMethod_var;
 const RuntimeMethod* Dictionary_2_get_Values_m3625351605_RuntimeMethod_var;
 const RuntimeMethod* Enumerable_ToList_TisARPlaneAnchorGameObject_t1947719815_m6396406_RuntimeMethod_var;
+const RuntimeMethod* Component_GetComponent_TisMeshRenderer_t587009260_m2899624428_RuntimeMethod_var;
 const RuntimeMethod* UnityARSessionNativeInterface__frame_update_m1185891212_RuntimeMethod_var;
 const RuntimeMethod* UnityARSessionNativeInterface__ar_session_failed_m3752069079_RuntimeMethod_var;
 const RuntimeMethod* UnityARSessionNativeInterface__ar_session_interrupted_m3485826967_RuntimeMethod_var;
@@ -5785,7 +5786,7 @@ String_t* _stringLiteral1864861238;
 String_t* _stringLiteral3926843441;
 String_t* _stringLiteral1132744560;
 String_t* _stringLiteral46997234;
-extern void** const g_MetadataUsages[5767] = 
+extern void** const g_MetadataUsages[5768] = 
 {
 	(void**)(&Contraction_t1589275354_0_0_0_var),
 	(void**)(&Level2Map_t3640798870_0_0_0_var),
@@ -8161,6 +8162,7 @@ extern void** const g_MetadataUsages[5767] =
 	(void**)(&Dictionary_2_Clear_m1470804087_RuntimeMethod_var),
 	(void**)(&Dictionary_2_get_Values_m3625351605_RuntimeMethod_var),
 	(void**)(&Enumerable_ToList_TisARPlaneAnchorGameObject_t1947719815_m6396406_RuntimeMethod_var),
+	(void**)(&Component_GetComponent_TisMeshRenderer_t587009260_m2899624428_RuntimeMethod_var),
 	(void**)(&UnityARSessionNativeInterface__frame_update_m1185891212_RuntimeMethod_var),
 	(void**)(&UnityARSessionNativeInterface__ar_session_failed_m3752069079_RuntimeMethod_var),
 	(void**)(&UnityARSessionNativeInterface__ar_session_interrupted_m3485826967_RuntimeMethod_var),

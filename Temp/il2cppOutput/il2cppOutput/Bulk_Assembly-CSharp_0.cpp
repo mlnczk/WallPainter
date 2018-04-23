@@ -1234,6 +1234,8 @@ extern RuntimeClass* List_1_t2585711361_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* List_1__ctor_m184519322_RuntimeMethod_var;
 extern const RuntimeMethod* List_1__ctor_m1424466557_RuntimeMethod_var;
 extern const uint32_t ResizeManager__ctor_m3288355010_MetadataUsageId;
+extern const RuntimeMethod* List_1_Add_m2765963565_RuntimeMethod_var;
+extern const uint32_t ResizeManager_CreateList_m341464814_MetadataUsageId;
 extern const RuntimeMethod* List_1_GetEnumerator_m4069702366_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_get_Current_m3675360547_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_Add_m944562610_RuntimeMethod_var;
@@ -1242,8 +1244,6 @@ extern const RuntimeMethod* Enumerator_Dispose_m2589232868_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m1432341886_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m889580076_RuntimeMethod_var;
 extern const uint32_t ResizeManager_GetActiveAnchors_m1826221894_MetadataUsageId;
-extern const RuntimeMethod* List_1_Add_m2765963565_RuntimeMethod_var;
-extern const uint32_t ResizeManager_CreateList_m341464814_MetadataUsageId;
 extern const uint32_t ResizeManager_SwitchColors_m3222340792_MetadataUsageId;
 extern const RuntimeMethod* List_1_get_Item_m3743125852_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_GetComponent_TisUnityARHitTestExample_t457226377_m3045111609_RuntimeMethod_var;
@@ -1290,6 +1290,7 @@ struct UnityARLightData_t2160616730_marshaled_com;;
 extern const uint32_t UnityARFaceAnchorData_get_identifierStr_m2827987257_MetadataUsageId;
 extern const uint32_t UnityARGeneratePlane_Start_m819352378_MetadataUsageId;
 extern const uint32_t UnityARGeneratePlane_OnGUI_m324062377_MetadataUsageId;
+extern const RuntimeMethod* Component_GetComponent_TisMeshRenderer_t587009260_m2899624428_RuntimeMethod_var;
 extern const uint32_t UnityARHitTestExample_HitTestWithResultType_m1112373859_MetadataUsageId;
 extern RuntimeClass* EventSystem_t1003666588_il2cpp_TypeInfo_var;
 extern RuntimeClass* PointerEventData_t3807901092_il2cpp_TypeInfo_var;
@@ -19571,12 +19572,14 @@ public:
 	Vector3_t3722313464  ___bluePlanePosition_12;
 	// UnityEngine.Vector3 UnityEngine.XR.iOS.ResizeManager::tempHolder
 	Vector3_t3722313464  ___tempHolder_13;
+	// UnityEngine.GameObject UnityEngine.XR.iOS.ResizeManager::tempGameObjectHolder
+	GameObject_t1113636619 * ___tempGameObjectHolder_14;
 	// System.Int32 UnityEngine.XR.iOS.ResizeManager::actualActiveIteration
-	int32_t ___actualActiveIteration_14;
+	int32_t ___actualActiveIteration_15;
 	// System.Int32 UnityEngine.XR.iOS.ResizeManager::amountOfObjectsInList
-	int32_t ___amountOfObjectsInList_15;
+	int32_t ___amountOfObjectsInList_16;
 	// System.Single UnityEngine.XR.iOS.ResizeManager::amountToChange
-	float ___amountToChange_16;
+	float ___amountToChange_17;
 
 public:
 	inline static int32_t get_offset_of_firstWall_2() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___firstWall_2)); }
@@ -19684,28 +19687,37 @@ public:
 		___tempHolder_13 = value;
 	}
 
-	inline static int32_t get_offset_of_actualActiveIteration_14() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___actualActiveIteration_14)); }
-	inline int32_t get_actualActiveIteration_14() const { return ___actualActiveIteration_14; }
-	inline int32_t* get_address_of_actualActiveIteration_14() { return &___actualActiveIteration_14; }
-	inline void set_actualActiveIteration_14(int32_t value)
+	inline static int32_t get_offset_of_tempGameObjectHolder_14() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___tempGameObjectHolder_14)); }
+	inline GameObject_t1113636619 * get_tempGameObjectHolder_14() const { return ___tempGameObjectHolder_14; }
+	inline GameObject_t1113636619 ** get_address_of_tempGameObjectHolder_14() { return &___tempGameObjectHolder_14; }
+	inline void set_tempGameObjectHolder_14(GameObject_t1113636619 * value)
 	{
-		___actualActiveIteration_14 = value;
+		___tempGameObjectHolder_14 = value;
+		Il2CppCodeGenWriteBarrier((&___tempGameObjectHolder_14), value);
 	}
 
-	inline static int32_t get_offset_of_amountOfObjectsInList_15() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountOfObjectsInList_15)); }
-	inline int32_t get_amountOfObjectsInList_15() const { return ___amountOfObjectsInList_15; }
-	inline int32_t* get_address_of_amountOfObjectsInList_15() { return &___amountOfObjectsInList_15; }
-	inline void set_amountOfObjectsInList_15(int32_t value)
+	inline static int32_t get_offset_of_actualActiveIteration_15() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___actualActiveIteration_15)); }
+	inline int32_t get_actualActiveIteration_15() const { return ___actualActiveIteration_15; }
+	inline int32_t* get_address_of_actualActiveIteration_15() { return &___actualActiveIteration_15; }
+	inline void set_actualActiveIteration_15(int32_t value)
 	{
-		___amountOfObjectsInList_15 = value;
+		___actualActiveIteration_15 = value;
 	}
 
-	inline static int32_t get_offset_of_amountToChange_16() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountToChange_16)); }
-	inline float get_amountToChange_16() const { return ___amountToChange_16; }
-	inline float* get_address_of_amountToChange_16() { return &___amountToChange_16; }
-	inline void set_amountToChange_16(float value)
+	inline static int32_t get_offset_of_amountOfObjectsInList_16() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountOfObjectsInList_16)); }
+	inline int32_t get_amountOfObjectsInList_16() const { return ___amountOfObjectsInList_16; }
+	inline int32_t* get_address_of_amountOfObjectsInList_16() { return &___amountOfObjectsInList_16; }
+	inline void set_amountOfObjectsInList_16(int32_t value)
 	{
-		___amountToChange_16 = value;
+		___amountOfObjectsInList_16 = value;
+	}
+
+	inline static int32_t get_offset_of_amountToChange_17() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountToChange_17)); }
+	inline float get_amountToChange_17() const { return ___amountToChange_17; }
+	inline float* get_address_of_amountToChange_17() { return &___amountToChange_17; }
+	inline void set_amountToChange_17(float value)
+	{
+		___amountToChange_17 = value;
 	}
 };
 
@@ -24384,6 +24396,12 @@ extern "C"  void UnityARAnchorManager__ctor_m649673493 (UnityARAnchorManager_t15
 #define List_1__ctor_m1424466557(__this, method) ((  void (*) (List_1_t2585711361 *, const RuntimeMethod*))List_1__ctor_m2321703786_gshared)(__this, method)
 // System.Void UnityEngine.XR.iOS.ResizeManager::CreateList()
 extern "C"  void ResizeManager_CreateList_m341464814 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0)
+#define List_1_Add_m2765963565(__this, p0, method) ((  void (*) (List_1_t2585711361 *, GameObject_t1113636619 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method)
+// System.Void UnityEngine.XR.iOS.ResizeManager::GetActiveAnchors()
+extern "C"  void ResizeManager_GetActiveAnchors_m1826221894 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
+extern "C"  void Transform_set_localScale_m3053443106 (Transform_t3600365921 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject> UnityEngine.XR.iOS.UnityARAnchorManager::GetCurrentPlaneAnchors()
 extern "C"  List_1_t3419794557 * UnityARAnchorManager_GetCurrentPlaneAnchors_m3820916150 (UnityARAnchorManager_t1557554123 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<UnityEngine.XR.iOS.ARPlaneAnchorGameObject>::GetEnumerator()
@@ -24402,12 +24420,6 @@ extern "C"  List_1_t3419794557 * UnityARAnchorManager_GetCurrentPlaneAnchors_m38
 #define List_1_get_Item_m889580076(__this, p0, method) ((  ARPlaneAnchorGameObject_t1947719815 * (*) (List_1_t3419794557 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
 // UnityEngine.Vector3 UnityEngine.XR.iOS.ARPlaneAnchor::get_extent()
 extern "C"  Vector3_t3722313464  ARPlaneAnchor_get_extent_m687688995 (ARPlaneAnchor_t2049372221 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Add(!0)
-#define List_1_Add_m2765963565(__this, p0, method) ((  void (*) (List_1_t2585711361 *, GameObject_t1113636619 *, const RuntimeMethod*))List_1_Add_m3338814081_gshared)(__this, p0, method)
-// System.Void UnityEngine.XR.iOS.ResizeManager::GetActiveAnchors()
-extern "C"  void ResizeManager_GetActiveAnchors_m1826221894 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
-extern "C"  void Transform_set_localScale_m3053443106 (Transform_t3600365921 * __this, Vector3_t3722313464  p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_localScale()
 extern "C"  Vector3_t3722313464  Transform_get_localScale_m129152068 (Transform_t3600365921 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.UI.ColorBlock UnityEngine.UI.Selectable::get_colors()
@@ -24472,6 +24484,10 @@ extern "C"  void UnityARCamera__ctor_m3730109421 (UnityARCamera_t2069150450 * __
 extern "C"  void UnityARUtility_InitializePlanePrefab_m2291423040 (RuntimeObject * __this /* static, unused */, GameObject_t1113636619 * ___go0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.XR.iOS.UnityARAnchorManager::Destroy()
 extern "C"  void UnityARAnchorManager_Destroy_m3879125245 (UnityARAnchorManager_t1557554123 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshRenderer>()
+#define Component_GetComponent_TisMeshRenderer_t587009260_m2899624428(__this, method) ((  MeshRenderer_t587009260 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method)
+// System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
+extern "C"  void Renderer_set_enabled_m1727253150 (Renderer_t2627027031 * __this, bool p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.EventSystems.EventSystem UnityEngine.EventSystems.EventSystem::get_current()
 extern "C"  EventSystem_t1003666588 * EventSystem_get_current_m1416377559 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.EventSystems.PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem)
@@ -46150,7 +46166,7 @@ extern "C"  void ResizeManager__ctor_m3288355010 (ResizeManager_t2782469129 * __
 		List_1_t2585711361 * L_2 = (List_1_t2585711361 *)il2cpp_codegen_object_new(List_1_t2585711361_il2cpp_TypeInfo_var);
 		List_1__ctor_m1424466557(L_2, /*hidden argument*/List_1__ctor_m1424466557_RuntimeMethod_var);
 		__this->set_listOfWalls_10(L_2);
-		__this->set_amountToChange_16((0.4f));
+		__this->set_amountToChange_17((1.0f));
 		MonoBehaviour__ctor_m1579109191(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -46167,6 +46183,51 @@ extern "C"  void ResizeManager_Start_m3642007558 (ResizeManager_t2782469129 * __
 extern "C"  void ResizeManager_Update_m3139628596 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method)
 {
 	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.ResizeManager::CreateList()
+extern "C"  void ResizeManager_CreateList_m341464814 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ResizeManager_CreateList_m341464814_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		GameObject_t1113636619 * L_0 = __this->get_firstWall_2();
+		__this->set_activeWall_9(L_0);
+		List_1_t2585711361 * L_1 = __this->get_listOfWalls_10();
+		GameObject_t1113636619 * L_2 = __this->get_firstWall_2();
+		NullCheck(L_1);
+		List_1_Add_m2765963565(L_1, L_2, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
+		List_1_t2585711361 * L_3 = __this->get_listOfWalls_10();
+		GameObject_t1113636619 * L_4 = __this->get_secondWall_3();
+		NullCheck(L_3);
+		List_1_Add_m2765963565(L_3, L_4, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
+		List_1_t2585711361 * L_5 = __this->get_listOfWalls_10();
+		GameObject_t1113636619 * L_6 = __this->get_thirdWall_4();
+		NullCheck(L_5);
+		List_1_Add_m2765963565(L_5, L_6, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
+		List_1_t2585711361 * L_7 = __this->get_listOfWalls_10();
+		GameObject_t1113636619 * L_8 = __this->get_fourthWall_5();
+		NullCheck(L_7);
+		List_1_Add_m2765963565(L_7, L_8, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.iOS.ResizeManager::FitToHitBox()
+extern "C"  void ResizeManager_FitToHitBox_m2867249618 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method)
+{
+	{
+		ResizeManager_GetActiveAnchors_m1826221894(__this, /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_0 = __this->get_activeWall_9();
+		NullCheck(L_0);
+		Transform_t3600365921 * L_1 = GameObject_get_transform_m1369836730(L_0, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_2 = __this->get_bluePlaneSize_11();
+		NullCheck(L_1);
+		Transform_set_localScale_m3053443106(L_1, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -46250,9 +46311,9 @@ IL_0049:
 		List_1_t3419794557 * L_7 = __this->get_planeAnchors_7();
 		NullCheck(L_7);
 		int32_t L_8 = List_1_get_Count_m1432341886(L_7, /*hidden argument*/List_1_get_Count_m1432341886_RuntimeMethod_var);
-		__this->set_amountOfObjectsInList_15(L_8);
+		__this->set_amountOfObjectsInList_16(L_8);
 		List_1_t3419794557 * L_9 = __this->get_planeAnchors_7();
-		int32_t L_10 = __this->get_amountOfObjectsInList_15();
+		int32_t L_10 = __this->get_amountOfObjectsInList_16();
 		NullCheck(L_9);
 		ARPlaneAnchorGameObject_t1947719815 * L_11 = List_1_get_Item_m889580076(L_9, ((int32_t)il2cpp_codegen_subtract((int32_t)L_10, (int32_t)1)), /*hidden argument*/List_1_get_Item_m889580076_RuntimeMethod_var);
 		NullCheck(L_11);
@@ -46260,51 +46321,6 @@ IL_0049:
 		NullCheck(L_12);
 		Vector3_t3722313464  L_13 = ARPlaneAnchor_get_extent_m687688995(L_12, /*hidden argument*/NULL);
 		__this->set_bluePlaneSize_11(L_13);
-		return;
-	}
-}
-// System.Void UnityEngine.XR.iOS.ResizeManager::CreateList()
-extern "C"  void ResizeManager_CreateList_m341464814 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (ResizeManager_CreateList_m341464814_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		GameObject_t1113636619 * L_0 = __this->get_firstWall_2();
-		__this->set_activeWall_9(L_0);
-		List_1_t2585711361 * L_1 = __this->get_listOfWalls_10();
-		GameObject_t1113636619 * L_2 = __this->get_firstWall_2();
-		NullCheck(L_1);
-		List_1_Add_m2765963565(L_1, L_2, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
-		List_1_t2585711361 * L_3 = __this->get_listOfWalls_10();
-		GameObject_t1113636619 * L_4 = __this->get_secondWall_3();
-		NullCheck(L_3);
-		List_1_Add_m2765963565(L_3, L_4, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
-		List_1_t2585711361 * L_5 = __this->get_listOfWalls_10();
-		GameObject_t1113636619 * L_6 = __this->get_thirdWall_4();
-		NullCheck(L_5);
-		List_1_Add_m2765963565(L_5, L_6, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
-		List_1_t2585711361 * L_7 = __this->get_listOfWalls_10();
-		GameObject_t1113636619 * L_8 = __this->get_fourthWall_5();
-		NullCheck(L_7);
-		List_1_Add_m2765963565(L_7, L_8, /*hidden argument*/List_1_Add_m2765963565_RuntimeMethod_var);
-		return;
-	}
-}
-// System.Void UnityEngine.XR.iOS.ResizeManager::FitToHitBox()
-extern "C"  void ResizeManager_FitToHitBox_m2867249618 (ResizeManager_t2782469129 * __this, const RuntimeMethod* method)
-{
-	{
-		ResizeManager_GetActiveAnchors_m1826221894(__this, /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_0 = __this->get_activeWall_9();
-		NullCheck(L_0);
-		Transform_t3600365921 * L_1 = GameObject_get_transform_m1369836730(L_0, /*hidden argument*/NULL);
-		Vector3_t3722313464  L_2 = __this->get_bluePlaneSize_11();
-		NullCheck(L_1);
-		Transform_set_localScale_m3053443106(L_1, L_2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -46321,7 +46337,7 @@ extern "C"  void ResizeManager_IncreaseHorizontal_m3605316814 (ResizeManager_t27
 		Vector3_t3722313464 * L_3 = __this->get_address_of_tempHolder_13();
 		Vector3_t3722313464 * L_4 = L_3;
 		float L_5 = L_4->get_x_1();
-		float L_6 = __this->get_amountToChange_16();
+		float L_6 = __this->get_amountToChange_17();
 		L_4->set_x_1(((float)il2cpp_codegen_add((float)L_5, (float)L_6)));
 		GameObject_t1113636619 * L_7 = __this->get_activeWall_9();
 		NullCheck(L_7);
@@ -46345,7 +46361,7 @@ extern "C"  void ResizeManager_DecreaseHorizontal_m1878465139 (ResizeManager_t27
 		Vector3_t3722313464 * L_3 = __this->get_address_of_tempHolder_13();
 		Vector3_t3722313464 * L_4 = L_3;
 		float L_5 = L_4->get_x_1();
-		float L_6 = __this->get_amountToChange_16();
+		float L_6 = __this->get_amountToChange_17();
 		L_4->set_x_1(((float)il2cpp_codegen_subtract((float)L_5, (float)L_6)));
 		GameObject_t1113636619 * L_7 = __this->get_activeWall_9();
 		NullCheck(L_7);
@@ -46369,7 +46385,7 @@ extern "C"  void ResizeManager_IncreaseVertical_m3427013461 (ResizeManager_t2782
 		Vector3_t3722313464 * L_3 = __this->get_address_of_tempHolder_13();
 		Vector3_t3722313464 * L_4 = L_3;
 		float L_5 = L_4->get_z_3();
-		float L_6 = __this->get_amountToChange_16();
+		float L_6 = __this->get_amountToChange_17();
 		L_4->set_z_3(((float)il2cpp_codegen_add((float)L_5, (float)L_6)));
 		GameObject_t1113636619 * L_7 = __this->get_activeWall_9();
 		NullCheck(L_7);
@@ -46393,7 +46409,7 @@ extern "C"  void ResizeManager_DecreaseVertical_m2281521328 (ResizeManager_t2782
 		Vector3_t3722313464 * L_3 = __this->get_address_of_tempHolder_13();
 		Vector3_t3722313464 * L_4 = L_3;
 		float L_5 = L_4->get_z_3();
-		float L_6 = __this->get_amountToChange_16();
+		float L_6 = __this->get_amountToChange_17();
 		L_4->set_z_3(((float)il2cpp_codegen_subtract((float)L_5, (float)L_6)));
 		GameObject_t1113636619 * L_7 = __this->get_activeWall_9();
 		NullCheck(L_7);
@@ -46472,7 +46488,7 @@ IL_0007:
 	}
 	{
 		int32_t L_5 = V_0;
-		__this->set_actualActiveIteration_14(L_5);
+		__this->set_actualActiveIteration_15(L_5);
 	}
 
 IL_0029:
@@ -46507,7 +46523,7 @@ extern "C"  void ResizeManager_SetupNextWall_m1830405073 (ResizeManager_t2782469
 	}
 	int32_t V_0 = 0;
 	{
-		int32_t L_0 = __this->get_actualActiveIteration_14();
+		int32_t L_0 = __this->get_actualActiveIteration_15();
 		V_0 = L_0;
 		int32_t L_1 = V_0;
 		switch (L_1)
@@ -47347,7 +47363,7 @@ extern "C"  bool UnityARHitTestExample_HitTestWithResultType_m1112373859 (UnityA
 		int32_t L_5 = List_1_get_Count_m2045149193(L_4, /*hidden argument*/List_1_get_Count_m2045149193_RuntimeMethod_var);
 		if ((((int32_t)L_5) <= ((int32_t)0)))
 		{
-			goto IL_00db;
+			goto IL_00ec;
 		}
 	}
 	{
@@ -47361,7 +47377,7 @@ IL_0020:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_00bc;
+			goto IL_00cd;
 		}
 
 IL_0025:
@@ -47380,74 +47396,79 @@ IL_0025:
 			Transform_set_rotation_m3524318132(L_12, L_14, /*hidden argument*/NULL);
 			Transform_t3600365921 * L_15 = __this->get_m_HitTransform_2();
 			NullCheck(L_15);
-			Vector3_t3722313464  L_16 = Transform_get_position_m36019626(L_15, /*hidden argument*/NULL);
-			V_3 = L_16;
-			float L_17 = (&V_3)->get_x_1();
-			float L_18 = L_17;
-			RuntimeObject * L_19 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_18);
-			Transform_t3600365921 * L_20 = __this->get_m_HitTransform_2();
-			NullCheck(L_20);
-			Vector3_t3722313464  L_21 = Transform_get_position_m36019626(L_20, /*hidden argument*/NULL);
-			V_4 = L_21;
-			float L_22 = (&V_4)->get_y_2();
-			float L_23 = L_22;
-			RuntimeObject * L_24 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_23);
-			Transform_t3600365921 * L_25 = __this->get_m_HitTransform_2();
-			NullCheck(L_25);
-			Vector3_t3722313464  L_26 = Transform_get_position_m36019626(L_25, /*hidden argument*/NULL);
-			V_5 = L_26;
-			float L_27 = (&V_5)->get_z_3();
-			float L_28 = L_27;
-			RuntimeObject * L_29 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_28);
+			MeshRenderer_t587009260 * L_16 = Component_GetComponent_TisMeshRenderer_t587009260_m2899624428(L_15, /*hidden argument*/Component_GetComponent_TisMeshRenderer_t587009260_m2899624428_RuntimeMethod_var);
+			NullCheck(L_16);
+			Renderer_set_enabled_m1727253150(L_16, (bool)1, /*hidden argument*/NULL);
+			Transform_t3600365921 * L_17 = __this->get_m_HitTransform_2();
+			NullCheck(L_17);
+			Vector3_t3722313464  L_18 = Transform_get_position_m36019626(L_17, /*hidden argument*/NULL);
+			V_3 = L_18;
+			float L_19 = (&V_3)->get_x_1();
+			float L_20 = L_19;
+			RuntimeObject * L_21 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_20);
+			Transform_t3600365921 * L_22 = __this->get_m_HitTransform_2();
+			NullCheck(L_22);
+			Vector3_t3722313464  L_23 = Transform_get_position_m36019626(L_22, /*hidden argument*/NULL);
+			V_4 = L_23;
+			float L_24 = (&V_4)->get_y_2();
+			float L_25 = L_24;
+			RuntimeObject * L_26 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_25);
+			Transform_t3600365921 * L_27 = __this->get_m_HitTransform_2();
+			NullCheck(L_27);
+			Vector3_t3722313464  L_28 = Transform_get_position_m36019626(L_27, /*hidden argument*/NULL);
+			V_5 = L_28;
+			float L_29 = (&V_5)->get_z_3();
+			float L_30 = L_29;
+			RuntimeObject * L_31 = Box(Single_t1397266774_il2cpp_TypeInfo_var, &L_30);
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_30 = String_Format_m3339413201(NULL /*static, unused*/, _stringLiteral94848434, L_19, L_24, L_29, /*hidden argument*/NULL);
+			String_t* L_32 = String_Format_m3339413201(NULL /*static, unused*/, _stringLiteral94848434, L_21, L_26, L_31, /*hidden argument*/NULL);
 			IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
-			Debug_Log_m4051431634(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+			Debug_Log_m4051431634(NULL /*static, unused*/, L_32, /*hidden argument*/NULL);
 			V_6 = (bool)1;
-			IL2CPP_LEAVE(0xDD, FINALLY_00cd);
+			IL2CPP_LEAVE(0xEE, FINALLY_00de);
 		}
 
-IL_00bc:
+IL_00cd:
 		{
-			bool L_31 = Enumerator_MoveNext_m3228882039((&V_2), /*hidden argument*/Enumerator_MoveNext_m3228882039_RuntimeMethod_var);
-			if (L_31)
+			bool L_33 = Enumerator_MoveNext_m3228882039((&V_2), /*hidden argument*/Enumerator_MoveNext_m3228882039_RuntimeMethod_var);
+			if (L_33)
 			{
 				goto IL_0025;
 			}
 		}
 
-IL_00c8:
+IL_00d9:
 		{
-			IL2CPP_LEAVE(0xDB, FINALLY_00cd);
+			IL2CPP_LEAVE(0xEC, FINALLY_00de);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_00cd;
+		goto FINALLY_00de;
 	}
 
-FINALLY_00cd:
+FINALLY_00de:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_m2925904114((&V_2), /*hidden argument*/Enumerator_Dispose_m2925904114_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(205)
+		IL2CPP_END_FINALLY(222)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(205)
+	IL2CPP_CLEANUP(222)
 	{
-		IL2CPP_JUMP_TBL(0xDD, IL_00dd)
-		IL2CPP_JUMP_TBL(0xDB, IL_00db)
+		IL2CPP_JUMP_TBL(0xEE, IL_00ee)
+		IL2CPP_JUMP_TBL(0xEC, IL_00ec)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
 	}
 
-IL_00db:
+IL_00ec:
 	{
 		return (bool)0;
 	}
 
-IL_00dd:
+IL_00ee:
 	{
-		bool L_32 = V_6;
-		return L_32;
+		bool L_34 = V_6;
+		return L_34;
 	}
 }
 // System.Boolean UnityEngine.XR.iOS.UnityARHitTestExample::IsPointerOverUIObject()

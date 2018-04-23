@@ -8615,6 +8615,7 @@ extern "C" void ReapplyDrivenProperties_BeginInvoke_m4260606555 ();
 extern "C" void ReapplyDrivenProperties_EndInvoke_m700307436 ();
 extern "C" void Renderer_SetPropertyBlock_m2471545580 ();
 extern "C" void Renderer_GetMaterial_m1815496413 ();
+extern "C" void Renderer_set_enabled_m1727253150 ();
 extern "C" void Renderer_get_sortingLayerID_m3902855301 ();
 extern "C" void Renderer_get_sortingOrder_m344607889 ();
 extern "C" void Renderer_get_material_m4171603682 ();
@@ -11837,9 +11838,9 @@ extern "C" void MarshalDirectionalLightEstimate_RotateForUnity_m1468552020_Adjus
 extern "C" void ResizeManager__ctor_m3288355010 ();
 extern "C" void ResizeManager_Start_m3642007558 ();
 extern "C" void ResizeManager_Update_m3139628596 ();
-extern "C" void ResizeManager_GetActiveAnchors_m1826221894 ();
 extern "C" void ResizeManager_CreateList_m341464814 ();
 extern "C" void ResizeManager_FitToHitBox_m2867249618 ();
+extern "C" void ResizeManager_GetActiveAnchors_m1826221894 ();
 extern "C" void ResizeManager_IncreaseHorizontal_m3605316814 ();
 extern "C" void ResizeManager_DecreaseHorizontal_m1878465139 ();
 extern "C" void ResizeManager_IncreaseVertical_m3427013461 ();
@@ -12227,7 +12228,7 @@ extern "C" void VideoFormatsExample_Start_m1615238214 ();
 extern "C" void VideoFormatsExample_OnDestroy_m541603283 ();
 extern "C" void VideoFormatsExample_PopulateVideoFormatButtons_m595526008 ();
 extern "C" void VideoFormatsExample_ExampletButtonPressed_m2588664126 ();
-extern const Il2CppMethodPointer g_MethodPointers[12209] = 
+extern const Il2CppMethodPointer g_MethodPointers[12210] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -20826,6 +20827,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12209] =
 	ReapplyDrivenProperties_EndInvoke_m700307436,
 	Renderer_SetPropertyBlock_m2471545580,
 	Renderer_GetMaterial_m1815496413,
+	Renderer_set_enabled_m1727253150,
 	Renderer_get_sortingLayerID_m3902855301,
 	Renderer_get_sortingOrder_m344607889,
 	Renderer_get_material_m4171603682,
@@ -24048,9 +24050,9 @@ extern const Il2CppMethodPointer g_MethodPointers[12209] =
 	ResizeManager__ctor_m3288355010,
 	ResizeManager_Start_m3642007558,
 	ResizeManager_Update_m3139628596,
-	ResizeManager_GetActiveAnchors_m1826221894,
 	ResizeManager_CreateList_m341464814,
 	ResizeManager_FitToHitBox_m2867249618,
+	ResizeManager_GetActiveAnchors_m1826221894,
 	ResizeManager_IncreaseHorizontal_m3605316814,
 	ResizeManager_DecreaseHorizontal_m1878465139,
 	ResizeManager_IncreaseVertical_m3427013461,

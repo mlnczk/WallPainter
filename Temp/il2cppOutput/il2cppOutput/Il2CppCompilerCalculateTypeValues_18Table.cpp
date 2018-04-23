@@ -5070,12 +5070,14 @@ public:
 	Vector3_t3722313464  ___bluePlanePosition_12;
 	// UnityEngine.Vector3 UnityEngine.XR.iOS.ResizeManager::tempHolder
 	Vector3_t3722313464  ___tempHolder_13;
+	// UnityEngine.GameObject UnityEngine.XR.iOS.ResizeManager::tempGameObjectHolder
+	GameObject_t1113636619 * ___tempGameObjectHolder_14;
 	// System.Int32 UnityEngine.XR.iOS.ResizeManager::actualActiveIteration
-	int32_t ___actualActiveIteration_14;
+	int32_t ___actualActiveIteration_15;
 	// System.Int32 UnityEngine.XR.iOS.ResizeManager::amountOfObjectsInList
-	int32_t ___amountOfObjectsInList_15;
+	int32_t ___amountOfObjectsInList_16;
 	// System.Single UnityEngine.XR.iOS.ResizeManager::amountToChange
-	float ___amountToChange_16;
+	float ___amountToChange_17;
 
 public:
 	inline static int32_t get_offset_of_firstWall_2() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___firstWall_2)); }
@@ -5183,28 +5185,37 @@ public:
 		___tempHolder_13 = value;
 	}
 
-	inline static int32_t get_offset_of_actualActiveIteration_14() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___actualActiveIteration_14)); }
-	inline int32_t get_actualActiveIteration_14() const { return ___actualActiveIteration_14; }
-	inline int32_t* get_address_of_actualActiveIteration_14() { return &___actualActiveIteration_14; }
-	inline void set_actualActiveIteration_14(int32_t value)
+	inline static int32_t get_offset_of_tempGameObjectHolder_14() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___tempGameObjectHolder_14)); }
+	inline GameObject_t1113636619 * get_tempGameObjectHolder_14() const { return ___tempGameObjectHolder_14; }
+	inline GameObject_t1113636619 ** get_address_of_tempGameObjectHolder_14() { return &___tempGameObjectHolder_14; }
+	inline void set_tempGameObjectHolder_14(GameObject_t1113636619 * value)
 	{
-		___actualActiveIteration_14 = value;
+		___tempGameObjectHolder_14 = value;
+		Il2CppCodeGenWriteBarrier((&___tempGameObjectHolder_14), value);
 	}
 
-	inline static int32_t get_offset_of_amountOfObjectsInList_15() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountOfObjectsInList_15)); }
-	inline int32_t get_amountOfObjectsInList_15() const { return ___amountOfObjectsInList_15; }
-	inline int32_t* get_address_of_amountOfObjectsInList_15() { return &___amountOfObjectsInList_15; }
-	inline void set_amountOfObjectsInList_15(int32_t value)
+	inline static int32_t get_offset_of_actualActiveIteration_15() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___actualActiveIteration_15)); }
+	inline int32_t get_actualActiveIteration_15() const { return ___actualActiveIteration_15; }
+	inline int32_t* get_address_of_actualActiveIteration_15() { return &___actualActiveIteration_15; }
+	inline void set_actualActiveIteration_15(int32_t value)
 	{
-		___amountOfObjectsInList_15 = value;
+		___actualActiveIteration_15 = value;
 	}
 
-	inline static int32_t get_offset_of_amountToChange_16() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountToChange_16)); }
-	inline float get_amountToChange_16() const { return ___amountToChange_16; }
-	inline float* get_address_of_amountToChange_16() { return &___amountToChange_16; }
-	inline void set_amountToChange_16(float value)
+	inline static int32_t get_offset_of_amountOfObjectsInList_16() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountOfObjectsInList_16)); }
+	inline int32_t get_amountOfObjectsInList_16() const { return ___amountOfObjectsInList_16; }
+	inline int32_t* get_address_of_amountOfObjectsInList_16() { return &___amountOfObjectsInList_16; }
+	inline void set_amountOfObjectsInList_16(int32_t value)
 	{
-		___amountToChange_16 = value;
+		___amountOfObjectsInList_16 = value;
+	}
+
+	inline static int32_t get_offset_of_amountToChange_17() { return static_cast<int32_t>(offsetof(ResizeManager_t2782469129, ___amountToChange_17)); }
+	inline float get_amountToChange_17() const { return ___amountToChange_17; }
+	inline float* get_address_of_amountToChange_17() { return &___amountToChange_17; }
+	inline void set_amountToChange_17(float value)
+	{
+		___amountToChange_17 = value;
 	}
 };
 
@@ -8307,7 +8318,7 @@ extern const int32_t g_FieldOffsetTable1875[1] =
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1876 = { sizeof (U24ArrayTypeU3D12_t2488454196)+ sizeof (RuntimeObject), sizeof(U24ArrayTypeU3D12_t2488454196 ), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1877 = { sizeof (U3CModuleU3E_t692745545), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1878 = { sizeof (ResizeManager_t2782469129), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable1878[15] = 
+extern const int32_t g_FieldOffsetTable1878[16] = 
 {
 	ResizeManager_t2782469129::get_offset_of_firstWall_2(),
 	ResizeManager_t2782469129::get_offset_of_secondWall_3(),
@@ -8321,9 +8332,10 @@ extern const int32_t g_FieldOffsetTable1878[15] =
 	ResizeManager_t2782469129::get_offset_of_bluePlaneSize_11(),
 	ResizeManager_t2782469129::get_offset_of_bluePlanePosition_12(),
 	ResizeManager_t2782469129::get_offset_of_tempHolder_13(),
-	ResizeManager_t2782469129::get_offset_of_actualActiveIteration_14(),
-	ResizeManager_t2782469129::get_offset_of_amountOfObjectsInList_15(),
-	ResizeManager_t2782469129::get_offset_of_amountToChange_16(),
+	ResizeManager_t2782469129::get_offset_of_tempGameObjectHolder_14(),
+	ResizeManager_t2782469129::get_offset_of_actualActiveIteration_15(),
+	ResizeManager_t2782469129::get_offset_of_amountOfObjectsInList_16(),
+	ResizeManager_t2782469129::get_offset_of_amountToChange_17(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize1879 = { sizeof (UIManager_t1042050227), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable1879[2] = 

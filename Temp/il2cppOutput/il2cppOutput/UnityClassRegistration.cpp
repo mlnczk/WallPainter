@@ -29,6 +29,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
+	void RegisterModule_Umbra();
+	RegisterModule_Umbra();
+
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
 
@@ -202,7 +205,7 @@ class Motion;
 class AnimationClip; 
 class PreviewAnimationClip; 
 class NavMeshData; 
-class OcclusionCullingData; 
+class OcclusionCullingData; template <> void RegisterClass<OcclusionCullingData>();
 class PhysicMaterial; template <> void RegisterClass<PhysicMaterial>();
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterClass<PreloadData>();
@@ -264,7 +267,7 @@ class UnityConnectSettings; template <> void RegisterClass<UnityConnectSettings>
 class LevelGameManager; template <> void RegisterClass<LevelGameManager>();
 class LightmapSettings; template <> void RegisterClass<LightmapSettings>();
 class NavMeshSettings; 
-class OcclusionCullingSettings; 
+class OcclusionCullingSettings; template <> void RegisterClass<OcclusionCullingSettings>();
 class RenderSettings; template <> void RegisterClass<RenderSettings>();
 class RenderPassAttachment; 
 
@@ -272,7 +275,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 73 non stripped classes
+	//Total: 75 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -411,13 +414,17 @@ RegisterBuiltinTypes();
 	RegisterClass<AudioManager>();
 	//68. FlareLayer
 	RegisterClass<FlareLayer>();
-	//69. BoxCollider
+	//69. OcclusionCullingData
+	RegisterClass<OcclusionCullingData>();
+	//70. BoxCollider
 	RegisterClass<BoxCollider>();
-	//70. PhysicMaterial
+	//71. PhysicMaterial
 	RegisterClass<PhysicMaterial>();
-	//71. SphereCollider
+	//72. SphereCollider
 	RegisterClass<SphereCollider>();
-	//72. ParticleSystemRenderer
+	//73. ParticleSystemRenderer
 	RegisterClass<ParticleSystemRenderer>();
+	//74. OcclusionCullingSettings
+	RegisterClass<OcclusionCullingSettings>();
 
 }
