@@ -3034,7 +3034,7 @@ extern "C"  ByteU5BU5D_t4116647657* WWWTranscoder_URLDecode_m3587034544 (Runtime
 // System.String System.Uri::get_OriginalString()
 extern "C"  String_t* Uri_get_OriginalString_m3715995233 (Uri_t100236324 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m897876424 (Regex_t3657309853 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C"  void Regex__ctor_m3948448025 (Regex_t3657309853 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -5601,7 +5601,7 @@ extern "C"  void WebRequestUtils__cctor_m4190982137 (RuntimeObject * __this /* s
 	}
 	{
 		Regex_t3657309853 * L_0 = (Regex_t3657309853 *)il2cpp_codegen_object_new(Regex_t3657309853_il2cpp_TypeInfo_var);
-		Regex__ctor_m897876424(L_0, _stringLiteral97523668, /*hidden argument*/NULL);
+		Regex__ctor_m3948448025(L_0, _stringLiteral97523668, /*hidden argument*/NULL);
 		((WebRequestUtils_t3541624225_StaticFields*)il2cpp_codegen_static_fields_for(WebRequestUtils_t3541624225_il2cpp_TypeInfo_var))->set_domainRegex_0(L_0);
 		return;
 	}

@@ -149,21 +149,21 @@ extern const Il2CppType MarshalByRefObject_t2760389100_0_0_0;
 extern const Il2CppType DateTimeOffset_t3229287507_0_0_0;
 extern const Il2CppType Guid_t_0_0_0;
 extern const Il2CppType Version_t3456873960_0_0_0;
-extern const Il2CppType BigInteger_t2902905090_0_0_0;
-extern const Il2CppType ByteU5BU5D_t4116647657_0_0_0;
-extern const Il2CppType IList_1_t2949616159_0_0_0;
-extern const Il2CppType ICollection_1_t3962448610_0_0_0;
-extern const Il2CppType IEnumerable_1_t114149265_0_0_0;
-extern const Il2CppType X509Certificate_t713131622_0_0_0;
-extern const Il2CppType IDeserializationCallback_t4220500054_0_0_0;
-extern const Il2CppType ClientCertificateType_t1004704908_0_0_0;
 extern const Il2CppType KeyValuePair_2_t3842366416_0_0_0;
 extern const Il2CppType KeyValuePair_2_t2280216431_0_0_0;
+extern const Il2CppType X509Certificate_t713131622_0_0_0;
+extern const Il2CppType IDeserializationCallback_t4220500054_0_0_0;
 extern const Il2CppType X509ChainStatus_t133602714_0_0_0;
 extern const Il2CppType Capture_t2232016050_0_0_0;
 extern const Il2CppType Group_t2468205786_0_0_0;
 extern const Il2CppType Mark_t3471605523_0_0_0;
 extern const Il2CppType UriScheme_t722425697_0_0_0;
+extern const Il2CppType BigInteger_t2902905090_0_0_0;
+extern const Il2CppType ByteU5BU5D_t4116647657_0_0_0;
+extern const Il2CppType IList_1_t2949616159_0_0_0;
+extern const Il2CppType ICollection_1_t3962448610_0_0_0;
+extern const Il2CppType IEnumerable_1_t114149265_0_0_0;
+extern const Il2CppType ClientCertificateType_t1004704908_0_0_0;
 extern const Il2CppType Link_t3209266973_0_0_0;
 extern const Il2CppType AsyncOperation_t1445031843_0_0_0;
 extern const Il2CppType Camera_t4157153871_0_0_0;
@@ -396,6 +396,8 @@ extern const Il2CppType Animator_t434523843_0_0_0;
 extern const Il2CppType UnityARVideo_t1146951207_0_0_0;
 extern const Il2CppType MeshRenderer_t587009260_0_0_0;
 extern const Il2CppType SkinnedMeshRenderer_t245602842_0_0_0;
+extern const Il2CppType MeshCollider_t903564387_0_0_0;
+extern const Il2CppType MeshFilter_t3523625662_0_0_0;
 extern const Il2CppType GUISkin_t1244372282_0_0_0;
 extern const Il2CppType ReporterGUI_t497187383_0_0_0;
 extern const Il2CppType Reporter_t3988517675_0_0_0;
@@ -403,9 +405,9 @@ extern const Il2CppType BoxSlider_t2380464200_0_0_0;
 extern const Il2CppType UnityARUserAnchorComponent_t969893952_0_0_0;
 extern const Il2CppType serializableFromEditorMessage_t3245497382_0_0_0;
 extern const Il2CppType UnityARHitTestExample_t457226377_0_0_0;
+extern const Il2CppType CutManager_t3272443262_0_0_0;
 extern const Il2CppType DontDestroyOnLoad_t1456007215_0_0_0;
 extern const Il2CppType ARKitPlaneMeshRender_t1298532386_0_0_0;
-extern const Il2CppType MeshFilter_t3523625662_0_0_0;
 extern const Il2CppType UnityARAnchorManager_t1557554123_0_0_0;
 extern const Il2CppType Int32U5BU5D_t385246372_0_0_0;
 extern const Il2CppType VideoFormatButton_t1937817916_0_0_0;
@@ -864,22 +866,6 @@ static const RuntimeType* GenInst_Guid_t_0_0_0_Types[] = { (&Guid_t_0_0_0) };
 extern const Il2CppGenericInst GenInst_Guid_t_0_0_0 = { 1, GenInst_Guid_t_0_0_0_Types };
 static const RuntimeType* GenInst_Version_t3456873960_0_0_0_Types[] = { (&Version_t3456873960_0_0_0) };
 extern const Il2CppGenericInst GenInst_Version_t3456873960_0_0_0 = { 1, GenInst_Version_t3456873960_0_0_0_Types };
-static const RuntimeType* GenInst_BigInteger_t2902905090_0_0_0_Types[] = { (&BigInteger_t2902905090_0_0_0) };
-extern const Il2CppGenericInst GenInst_BigInteger_t2902905090_0_0_0 = { 1, GenInst_BigInteger_t2902905090_0_0_0_Types };
-static const RuntimeType* GenInst_ByteU5BU5D_t4116647657_0_0_0_Types[] = { (&ByteU5BU5D_t4116647657_0_0_0) };
-extern const Il2CppGenericInst GenInst_ByteU5BU5D_t4116647657_0_0_0 = { 1, GenInst_ByteU5BU5D_t4116647657_0_0_0_Types };
-static const RuntimeType* GenInst_IList_1_t2949616159_0_0_0_Types[] = { (&IList_1_t2949616159_0_0_0) };
-extern const Il2CppGenericInst GenInst_IList_1_t2949616159_0_0_0 = { 1, GenInst_IList_1_t2949616159_0_0_0_Types };
-static const RuntimeType* GenInst_ICollection_1_t3962448610_0_0_0_Types[] = { (&ICollection_1_t3962448610_0_0_0) };
-extern const Il2CppGenericInst GenInst_ICollection_1_t3962448610_0_0_0 = { 1, GenInst_ICollection_1_t3962448610_0_0_0_Types };
-static const RuntimeType* GenInst_IEnumerable_1_t114149265_0_0_0_Types[] = { (&IEnumerable_1_t114149265_0_0_0) };
-extern const Il2CppGenericInst GenInst_IEnumerable_1_t114149265_0_0_0 = { 1, GenInst_IEnumerable_1_t114149265_0_0_0_Types };
-static const RuntimeType* GenInst_X509Certificate_t713131622_0_0_0_Types[] = { (&X509Certificate_t713131622_0_0_0) };
-extern const Il2CppGenericInst GenInst_X509Certificate_t713131622_0_0_0 = { 1, GenInst_X509Certificate_t713131622_0_0_0_Types };
-static const RuntimeType* GenInst_IDeserializationCallback_t4220500054_0_0_0_Types[] = { (&IDeserializationCallback_t4220500054_0_0_0) };
-extern const Il2CppGenericInst GenInst_IDeserializationCallback_t4220500054_0_0_0 = { 1, GenInst_IDeserializationCallback_t4220500054_0_0_0_Types };
-static const RuntimeType* GenInst_ClientCertificateType_t1004704908_0_0_0_Types[] = { (&ClientCertificateType_t1004704908_0_0_0) };
-extern const Il2CppGenericInst GenInst_ClientCertificateType_t1004704908_0_0_0 = { 1, GenInst_ClientCertificateType_t1004704908_0_0_0_Types };
 static const RuntimeType* GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Types[] = { (&String_t_0_0_0), (&Boolean_t97287965_0_0_0) };
 extern const Il2CppGenericInst GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0 = { 2, GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Types };
 static const RuntimeType* GenInst_RuntimeObject_0_0_0_Boolean_t97287965_0_0_0_Types[] = { (&RuntimeObject_0_0_0), (&Boolean_t97287965_0_0_0) };
@@ -900,6 +886,10 @@ static const RuntimeType* GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_KeyValu
 extern const Il2CppGenericInst GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_KeyValuePair_2_t2280216431_0_0_0 = { 3, GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_KeyValuePair_2_t2280216431_0_0_0_Types };
 static const RuntimeType* GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Boolean_t97287965_0_0_0_Types[] = { (&String_t_0_0_0), (&Boolean_t97287965_0_0_0), (&Boolean_t97287965_0_0_0) };
 extern const Il2CppGenericInst GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Boolean_t97287965_0_0_0 = { 3, GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Boolean_t97287965_0_0_0_Types };
+static const RuntimeType* GenInst_X509Certificate_t713131622_0_0_0_Types[] = { (&X509Certificate_t713131622_0_0_0) };
+extern const Il2CppGenericInst GenInst_X509Certificate_t713131622_0_0_0 = { 1, GenInst_X509Certificate_t713131622_0_0_0_Types };
+static const RuntimeType* GenInst_IDeserializationCallback_t4220500054_0_0_0_Types[] = { (&IDeserializationCallback_t4220500054_0_0_0) };
+extern const Il2CppGenericInst GenInst_IDeserializationCallback_t4220500054_0_0_0 = { 1, GenInst_IDeserializationCallback_t4220500054_0_0_0_Types };
 static const RuntimeType* GenInst_X509ChainStatus_t133602714_0_0_0_Types[] = { (&X509ChainStatus_t133602714_0_0_0) };
 extern const Il2CppGenericInst GenInst_X509ChainStatus_t133602714_0_0_0 = { 1, GenInst_X509ChainStatus_t133602714_0_0_0_Types };
 static const RuntimeType* GenInst_Capture_t2232016050_0_0_0_Types[] = { (&Capture_t2232016050_0_0_0) };
@@ -910,6 +900,18 @@ static const RuntimeType* GenInst_Mark_t3471605523_0_0_0_Types[] = { (&Mark_t347
 extern const Il2CppGenericInst GenInst_Mark_t3471605523_0_0_0 = { 1, GenInst_Mark_t3471605523_0_0_0_Types };
 static const RuntimeType* GenInst_UriScheme_t722425697_0_0_0_Types[] = { (&UriScheme_t722425697_0_0_0) };
 extern const Il2CppGenericInst GenInst_UriScheme_t722425697_0_0_0 = { 1, GenInst_UriScheme_t722425697_0_0_0_Types };
+static const RuntimeType* GenInst_BigInteger_t2902905090_0_0_0_Types[] = { (&BigInteger_t2902905090_0_0_0) };
+extern const Il2CppGenericInst GenInst_BigInteger_t2902905090_0_0_0 = { 1, GenInst_BigInteger_t2902905090_0_0_0_Types };
+static const RuntimeType* GenInst_ByteU5BU5D_t4116647657_0_0_0_Types[] = { (&ByteU5BU5D_t4116647657_0_0_0) };
+extern const Il2CppGenericInst GenInst_ByteU5BU5D_t4116647657_0_0_0 = { 1, GenInst_ByteU5BU5D_t4116647657_0_0_0_Types };
+static const RuntimeType* GenInst_IList_1_t2949616159_0_0_0_Types[] = { (&IList_1_t2949616159_0_0_0) };
+extern const Il2CppGenericInst GenInst_IList_1_t2949616159_0_0_0 = { 1, GenInst_IList_1_t2949616159_0_0_0_Types };
+static const RuntimeType* GenInst_ICollection_1_t3962448610_0_0_0_Types[] = { (&ICollection_1_t3962448610_0_0_0) };
+extern const Il2CppGenericInst GenInst_ICollection_1_t3962448610_0_0_0 = { 1, GenInst_ICollection_1_t3962448610_0_0_0_Types };
+static const RuntimeType* GenInst_IEnumerable_1_t114149265_0_0_0_Types[] = { (&IEnumerable_1_t114149265_0_0_0) };
+extern const Il2CppGenericInst GenInst_IEnumerable_1_t114149265_0_0_0 = { 1, GenInst_IEnumerable_1_t114149265_0_0_0_Types };
+static const RuntimeType* GenInst_ClientCertificateType_t1004704908_0_0_0_Types[] = { (&ClientCertificateType_t1004704908_0_0_0) };
+extern const Il2CppGenericInst GenInst_ClientCertificateType_t1004704908_0_0_0 = { 1, GenInst_ClientCertificateType_t1004704908_0_0_0_Types };
 static const RuntimeType* GenInst_Link_t3209266973_0_0_0_Types[] = { (&Link_t3209266973_0_0_0) };
 extern const Il2CppGenericInst GenInst_Link_t3209266973_0_0_0 = { 1, GenInst_Link_t3209266973_0_0_0_Types };
 static const RuntimeType* GenInst_AsyncOperation_t1445031843_0_0_0_Types[] = { (&AsyncOperation_t1445031843_0_0_0) };
@@ -1556,6 +1558,10 @@ static const RuntimeType* GenInst_MeshRenderer_t587009260_0_0_0_Types[] = { (&Me
 extern const Il2CppGenericInst GenInst_MeshRenderer_t587009260_0_0_0 = { 1, GenInst_MeshRenderer_t587009260_0_0_0_Types };
 static const RuntimeType* GenInst_SkinnedMeshRenderer_t245602842_0_0_0_Types[] = { (&SkinnedMeshRenderer_t245602842_0_0_0) };
 extern const Il2CppGenericInst GenInst_SkinnedMeshRenderer_t245602842_0_0_0 = { 1, GenInst_SkinnedMeshRenderer_t245602842_0_0_0_Types };
+static const RuntimeType* GenInst_MeshCollider_t903564387_0_0_0_Types[] = { (&MeshCollider_t903564387_0_0_0) };
+extern const Il2CppGenericInst GenInst_MeshCollider_t903564387_0_0_0 = { 1, GenInst_MeshCollider_t903564387_0_0_0_Types };
+static const RuntimeType* GenInst_MeshFilter_t3523625662_0_0_0_Types[] = { (&MeshFilter_t3523625662_0_0_0) };
+extern const Il2CppGenericInst GenInst_MeshFilter_t3523625662_0_0_0 = { 1, GenInst_MeshFilter_t3523625662_0_0_0_Types };
 static const RuntimeType* GenInst_GUISkin_t1244372282_0_0_0_Types[] = { (&GUISkin_t1244372282_0_0_0) };
 extern const Il2CppGenericInst GenInst_GUISkin_t1244372282_0_0_0 = { 1, GenInst_GUISkin_t1244372282_0_0_0_Types };
 static const RuntimeType* GenInst_ReporterGUI_t497187383_0_0_0_Types[] = { (&ReporterGUI_t497187383_0_0_0) };
@@ -1570,12 +1576,12 @@ static const RuntimeType* GenInst_serializableFromEditorMessage_t3245497382_0_0_
 extern const Il2CppGenericInst GenInst_serializableFromEditorMessage_t3245497382_0_0_0 = { 1, GenInst_serializableFromEditorMessage_t3245497382_0_0_0_Types };
 static const RuntimeType* GenInst_UnityARHitTestExample_t457226377_0_0_0_Types[] = { (&UnityARHitTestExample_t457226377_0_0_0) };
 extern const Il2CppGenericInst GenInst_UnityARHitTestExample_t457226377_0_0_0 = { 1, GenInst_UnityARHitTestExample_t457226377_0_0_0_Types };
+static const RuntimeType* GenInst_CutManager_t3272443262_0_0_0_Types[] = { (&CutManager_t3272443262_0_0_0) };
+extern const Il2CppGenericInst GenInst_CutManager_t3272443262_0_0_0 = { 1, GenInst_CutManager_t3272443262_0_0_0_Types };
 static const RuntimeType* GenInst_DontDestroyOnLoad_t1456007215_0_0_0_Types[] = { (&DontDestroyOnLoad_t1456007215_0_0_0) };
 extern const Il2CppGenericInst GenInst_DontDestroyOnLoad_t1456007215_0_0_0 = { 1, GenInst_DontDestroyOnLoad_t1456007215_0_0_0_Types };
 static const RuntimeType* GenInst_ARKitPlaneMeshRender_t1298532386_0_0_0_Types[] = { (&ARKitPlaneMeshRender_t1298532386_0_0_0) };
 extern const Il2CppGenericInst GenInst_ARKitPlaneMeshRender_t1298532386_0_0_0 = { 1, GenInst_ARKitPlaneMeshRender_t1298532386_0_0_0_Types };
-static const RuntimeType* GenInst_MeshFilter_t3523625662_0_0_0_Types[] = { (&MeshFilter_t3523625662_0_0_0) };
-extern const Il2CppGenericInst GenInst_MeshFilter_t3523625662_0_0_0 = { 1, GenInst_MeshFilter_t3523625662_0_0_0_Types };
 static const RuntimeType* GenInst_UnityARAnchorManager_t1557554123_0_0_0_Types[] = { (&UnityARAnchorManager_t1557554123_0_0_0) };
 extern const Il2CppGenericInst GenInst_UnityARAnchorManager_t1557554123_0_0_0 = { 1, GenInst_UnityARAnchorManager_t1557554123_0_0_0_Types };
 static const RuntimeType* GenInst_Int32U5BU5D_t385246372_0_0_0_Types[] = { (&Int32U5BU5D_t385246372_0_0_0) };
@@ -1970,7 +1976,7 @@ static const RuntimeType* GenInst_MultiKeyDictionary_3_t554444141_gp_1_0_0_0_Mul
 extern const Il2CppGenericInst GenInst_MultiKeyDictionary_3_t554444141_gp_1_0_0_0_MultiKeyDictionary_3_t554444141_gp_2_0_0_0 = { 2, GenInst_MultiKeyDictionary_3_t554444141_gp_1_0_0_0_MultiKeyDictionary_3_t554444141_gp_2_0_0_0_Types };
 static const RuntimeType* GenInst_KeyValuePair_2_t2221710270_0_0_0_Types[] = { (&KeyValuePair_2_t2221710270_0_0_0) };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2221710270_0_0_0 = { 1, GenInst_KeyValuePair_2_t2221710270_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[700] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[702] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Int32_t2950945753_0_0_0,
@@ -2119,14 +2125,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[700] =
 	&GenInst_DateTimeOffset_t3229287507_0_0_0,
 	&GenInst_Guid_t_0_0_0,
 	&GenInst_Version_t3456873960_0_0_0,
-	&GenInst_BigInteger_t2902905090_0_0_0,
-	&GenInst_ByteU5BU5D_t4116647657_0_0_0,
-	&GenInst_IList_1_t2949616159_0_0_0,
-	&GenInst_ICollection_1_t3962448610_0_0_0,
-	&GenInst_IEnumerable_1_t114149265_0_0_0,
-	&GenInst_X509Certificate_t713131622_0_0_0,
-	&GenInst_IDeserializationCallback_t4220500054_0_0_0,
-	&GenInst_ClientCertificateType_t1004704908_0_0_0,
 	&GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0,
 	&GenInst_RuntimeObject_0_0_0_Boolean_t97287965_0_0_0,
 	&GenInst_KeyValuePair_2_t3842366416_0_0_0,
@@ -2137,11 +2135,19 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[700] =
 	&GenInst_KeyValuePair_2_t2280216431_0_0_0,
 	&GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_KeyValuePair_2_t2280216431_0_0_0,
 	&GenInst_String_t_0_0_0_Boolean_t97287965_0_0_0_Boolean_t97287965_0_0_0,
+	&GenInst_X509Certificate_t713131622_0_0_0,
+	&GenInst_IDeserializationCallback_t4220500054_0_0_0,
 	&GenInst_X509ChainStatus_t133602714_0_0_0,
 	&GenInst_Capture_t2232016050_0_0_0,
 	&GenInst_Group_t2468205786_0_0_0,
 	&GenInst_Mark_t3471605523_0_0_0,
 	&GenInst_UriScheme_t722425697_0_0_0,
+	&GenInst_BigInteger_t2902905090_0_0_0,
+	&GenInst_ByteU5BU5D_t4116647657_0_0_0,
+	&GenInst_IList_1_t2949616159_0_0_0,
+	&GenInst_ICollection_1_t3962448610_0_0_0,
+	&GenInst_IEnumerable_1_t114149265_0_0_0,
+	&GenInst_ClientCertificateType_t1004704908_0_0_0,
 	&GenInst_Link_t3209266973_0_0_0,
 	&GenInst_AsyncOperation_t1445031843_0_0_0,
 	&GenInst_Camera_t4157153871_0_0_0,
@@ -2465,6 +2471,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[700] =
 	&GenInst_UnityARVideo_t1146951207_0_0_0,
 	&GenInst_MeshRenderer_t587009260_0_0_0,
 	&GenInst_SkinnedMeshRenderer_t245602842_0_0_0,
+	&GenInst_MeshCollider_t903564387_0_0_0,
+	&GenInst_MeshFilter_t3523625662_0_0_0,
 	&GenInst_GUISkin_t1244372282_0_0_0,
 	&GenInst_ReporterGUI_t497187383_0_0_0,
 	&GenInst_Reporter_t3988517675_0_0_0,
@@ -2472,9 +2480,9 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[700] =
 	&GenInst_UnityARUserAnchorComponent_t969893952_0_0_0,
 	&GenInst_serializableFromEditorMessage_t3245497382_0_0_0,
 	&GenInst_UnityARHitTestExample_t457226377_0_0_0,
+	&GenInst_CutManager_t3272443262_0_0_0,
 	&GenInst_DontDestroyOnLoad_t1456007215_0_0_0,
 	&GenInst_ARKitPlaneMeshRender_t1298532386_0_0_0,
-	&GenInst_MeshFilter_t3523625662_0_0_0,
 	&GenInst_UnityARAnchorManager_t1557554123_0_0_0,
 	&GenInst_Int32U5BU5D_t385246372_0_0_0,
 	&GenInst_VideoFormatButton_t1937817916_0_0_0,
